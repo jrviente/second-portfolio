@@ -17,9 +17,10 @@
 <body>
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid d-flex align-items-center justify-content-end">
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -41,7 +42,7 @@
             </div>
         </div>
     </nav>
-    
+
     <section id="home">
         <div class="row home">
             <div class="col-6 ">
@@ -57,7 +58,8 @@
                         <p class="">I build and develop web applications.</p>
                     </div>
                     <div class="socials">
-                        <a href="https://www.facebook.com/janrhenan.viente" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/janrhenan.viente" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
                         <a href="https://github.com/jrviente" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="mailto:vientejanrhenan16@gmail.com"><i class="fas fa-envelope "></i></a>
                         <a href="#contact"><button class="contactMe ">Contact Me</button></a>
@@ -103,12 +105,15 @@
                                                     <i class='bx bxl-c-plus-plus' title="C++"></i>
                                                     <i class="fab fa-html5" title="HTML"></i>
                                                     <i class="fab fa-css3-alt" title="CSS"></i>
-                                                    <i class="fab fa-php" title="PHP"></i>                  
+                                                    <i class="fab fa-php" title="PHP"></i>
                                                     <i class="fab fa-js" title="JavaScript"></i>
                                                     <i class="fab fa-laravel" title="Laravel"></i>
                                                 </div>
                                                 <span>2020-2024</span>
-                                                <p class="school"><i class="fas fa-book"></i> <strong>Bachelor of Science in Computer Science </strong><br> <i class="fas fa-university"></i><strong>Negros Oriental State University</strong></p>
+                                                <p class="school"><i class="fas fa-book"></i> <strong>Bachelor of
+                                                        Science in Computer Science </strong><br> <i
+                                                        class="fas fa-university"></i><strong>Negros Oriental State
+                                                        University</strong></p>
                                             </div>
                                         </div>
                                     </div>
@@ -127,7 +132,10 @@
                                                     <i class="fab fa-laravel" title="Laravel"></i>
                                                 </div>
                                                 <span>2018 - 2020</span>
-                                                <p class="school"><i class="fas fa-book"></i> <strong>ICT STRAND - Computer Programming</strong> <br> <i class="fas fa-university"></i> <strong>Foundation Prepartory Academy</strong></p>
+                                                <p class="school"><i class="fas fa-book"></i> <strong>ICT STRAND -
+                                                        Computer Programming</strong> <br> <i
+                                                        class="fas fa-university"></i> <strong>Foundation Prepartory
+                                                        Academy</strong></p>
                                             </div>
                                         </div>
                                     </div>
@@ -142,10 +150,14 @@
                                             </div>
                                             <div>
                                                 <div class="technology">
-                                                    <i class="fas fa-laptop-code"></i> <span class="pascal">Pascal</span>
+                                                    <i class="fas fa-laptop-code"></i> <span
+                                                        class="pascal">Pascal</span>
                                                 </div>
                                                 <span>2014 - 2018</span>
-                                                <p class="school"><i class="fas fa-book"></i> <strong>TLE - Information Communciation and Technology</strong><br> <i class="fas fa-university"></i> <strong>Valencia National High School</strong></p>
+                                                <p class="school"><i class="fas fa-book"></i> <strong>TLE - Information
+                                                        Communciation and Technology</strong><br> <i
+                                                        class="fas fa-university"></i> <strong>Valencia National High
+                                                        School</strong></p>
                                             </div>
                                         </div>
                                     </div>
@@ -508,7 +520,7 @@
                     <a href="mailto:someone@example.com"><i class="fas fa-envelope "></i></a>
                 </div>
             </form>
-            
+
         </div>
     </section>
     <footer>
@@ -534,33 +546,32 @@
 <script>
     emailjs.init("fWzLEahbSb_IY4_Iu");
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+    document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+            event.preventDefault();
 
-    emailjs.sendForm("service_zpkpboh", "template_8amrsfa", this).then(
-      function (response) {
-        console.log("Success:", response);
-        alert("Your message has been sent successfully!");
-      },
-      function (error) {
-        console.log("Error:", error);
-        alert("There was an error sending your message.");
-      }
-    );
-  });
-
+            emailjs.sendForm("service_zpkpboh", "template_8amrsfa", this).then(
+                function (response) {
+                    console.log("Success:", response);
+                    alert("Your message has been sent successfully!");
+                },
+                function (error) {
+                    console.log("Error:", error);
+                    alert("There was an error sending your message.");
+                }
+            );
+        });
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         var navLinks = document.querySelectorAll('.nav-link');
         var navCollapse = document.querySelector('.navbar-collapse');
 
-        navLinks.forEach(function(link) {
-            link.addEventListener('click', function() {
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
                 if (window.innerWidth < 992) {
-                    setTimeout(function() {
+                    setTimeout(function () {
                         navCollapse.classList.remove('show');
                     }, 300);
                 }
@@ -568,4 +579,5 @@ document
         });
     });
 </script>
+
 </html>

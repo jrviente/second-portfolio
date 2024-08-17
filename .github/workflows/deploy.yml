@@ -1,0 +1,30 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build and Deploy
+        env:
+          EMAIL_SERVICE_ID: ${{ secrets.EMAIL_SERVICE_ID }}
+          EMAIL_TEMPLATE_ID: ${{ secrets.EMAIL_TEMPLATE_ID }}
+          EMAIL_USER_ID: ${{ secrets.EMAIL_USER_ID }}
+        run: |
+          # Install dependencies (if needed)
+          # npm install
+
+          # Build your project
+          # npm run build
+
+          # Example deployment step
+          echo "Deploying project with EmailJS configuration"
+          # Here you would include commands to deploy your project or run any scripts.

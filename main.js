@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+ 
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
   const observer = new IntersectionObserver(
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { threshold: 0.5 }
   );
 
+
   sections.forEach((section) => observer.observe(section));
 
   const headerOffset = document.querySelector(".sticky-top").offsetHeight;
@@ -32,5 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
         behavior: "smooth",
       });
     });
+    
   });
+
+  
 });

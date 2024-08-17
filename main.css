@@ -11,19 +11,27 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
+a{
     text-decoration: none;
+    color: black;
+}
 
+li{
+    list-style: none;
 }
 
 nav {
     background-color: #141414;
+}
+
+.navbar-nav{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    justify-content: end;
+    align-items: end;
+}
+
+.navbar-toggler{
+    background-color: #88a201;
 }
 
 #home {
@@ -37,27 +45,23 @@ nav {
     align-items: center;
 }
 
-.nav-link {
-    padding: 10px;
-}
 
-
-.nav a {
+.navbar  li a {
     color: white;
     font-size: 18px;
     margin: 15px;
 }
 
-.nav a:hover {
+.navbar a:hover {
     color: #88a201;
 }
 
-.nav .nav-link:active {
+.navbar .nav-link:active {
     color: #88a201;
     border-bottom: 1px solid #88a201;
 }
 
-.nav .nav-link.active {
+.navbar .nav-link.active {
     color: #88a201;
     border-bottom: 1px solid #88a201;
 }
